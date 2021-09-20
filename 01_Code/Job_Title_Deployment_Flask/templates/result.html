@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prediction</title>
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}"> -->
+</head>
+
+<body style="background: #dedede;">
+<center>
+	<header>
+		<div class="container">
+		<div id="brandname" style="
+    width: 60%;
+    font-size: 25px;
+    margin-top: 40px;
+    border-style: double;
+    padding: 12px;
+    background: #c711e6;
+    color: #060606;
+    font-style: italic;
+">
+			Machine Learning Basics Prediction App
+		</div>
+		<h2 style="color:blue;font-size:20;text-align:center;color: #178b9a;"> Job Title Detector 
+		
+	</h2>
+	</div></header>
+	<p style="color: #0c0c0c;font-size:20;text-align: center;font-size: x-large;"><b>Prediction for Input Job Discribtion</b></p>
+	<div class="results">
+
+	{% if prediction == 0%}
+	<h2 style="color: #f3f3f3;background-color: #3f51b5;border-style: solid;border-color: #2b2b2a;padding: 10px;width: 30%;border-width: 2px;"> Accountancy </h2>
+	{% elif prediction == 1%}
+	<h2 style="color: #f3f3f3;background-color: #3f51b5;border-style: solid;border-color: #2b2b2a;padding: 10px;width: 30%;border-width: 2px;"> Education </h2>
+	{% elif prediction == 2%}
+	<h2 style="color: #f3f3f3;background-color: #3f51b5;border-style: solid;border-color: #2b2b2a;padding: 10px;width: 30%;border-width: 2px;"> IT </h2>
+	{% elif prediction == 3%}
+	<h2 style="color: #f3f3f3;background-color: #3f51b5;border-style: solid;border-color: #2b2b2a;padding: 10px;width: 30%;border-width: 2px;"> Marketing </h2>
+	{% endif %}
+
+	</div>
+	<div>
+	<button onclick="goBack()" style="
+    width: 12%;
+    padding: 8px;
+    font-size: larger;
+    background-color: #009688;
+    color: #eae4e4;
+    border-style: outset;
+">Go Back</button>
+
+	<script>
+	function goBack() {
+	  window.history.back();
+	}
+	</script>
+	</div>
+
+    </center>
+</body>
+
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}"> -->
+</head>
+
+
+<body style="background: #ccc0d2;"><center>
+
+
+	<header>
+		<div class="container">
+		<div id="brandname" style="
+    width: 60%;
+    font-size: 25px;
+    margin-top: 40px;
+    border-style: double;
+    padding: 12px;
+    background: #c711e6;
+    color: #000;
+    font-style: italic;
+">
+			Machine Learning App with Flask
+		</div>
+		<h2 style="
+    color: #009688;
+">Job Title Detector</h2>
+		
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<p style="
+    color: #101010;
+    font-size: 14;
+    font-weight: 600;
+">Enter Job Discribtion Message Here</p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="message" rows="6" cols="50" style="
+    width: 40%;
+    background-color: #eaeaea;
+    font-size: large;
+    font-style: normal;
+    font-family: sans-serif;
+    padding: 9px;
+"></textarea>
+		<br>
+
+		<input type="Submit" class="btn-info" value="Predict" style="
+    margin-top: 10px;
+    width: 12%;
+    font-size: larger;
+    padding: 5px;
+    color: #d9dada;
+    font-weight: bold;
+    background-color: #673ab7;
+    border-style: outset;
+">
+		
+	</form>
+		
+	</div>
+
+	
+	
+
+
+</center>
+</body>
+
+
+
+</html>
